@@ -3,7 +3,7 @@ Manage their list of parents (scaffold is fine if you want; this isn't the point
 -------------------
 +++++++++++++++++++
 -------------------
- Commit often, not just at the end. Continue to #shipit!
+
 A README. Doesn't have to be much, but it does have to exist. It must include at least one header and a link to your app running on Heroku.
 A Working Rails app on Heroku.
 

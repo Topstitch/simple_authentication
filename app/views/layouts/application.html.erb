@@ -8,7 +8,8 @@
   <%= favicon_link_tag '/favicon4.ico' %>
 </head>
 <body>
-  <p>Welcome, <%=session[:teacher]%>! Logout</p>
+  <%= session[:id] %>
+  <%= link_to 'Logout', logout_path %>
 <%= yield %>
 
 </body>
