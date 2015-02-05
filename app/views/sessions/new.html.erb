@@ -1,8 +1,11 @@
-<h1>Come te, non c'e nessuno.  Tu sei l'unico al mondo.  Nei tuoi occhi profundi io vedo tanta tristezza...</h1>
+<h1>Simple Authentication</h1>
 
 <%= form_tag sessions_path do %>
       <%= label_tag :email %>
       <%= email_field_tag :email, params[:email] %>
+
+      <%= label_tag :password %>
+      <%= password_field_tag :password, params[:password] %>
 
       <%= submit_tag "Login Here" %>
 
