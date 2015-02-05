@@ -9,8 +9,7 @@ class SessionsController < ApplicationController
   def create
     teacher = Teacher.find_by_email(params[:email])
     if teacher
-      session[:id] = teacher.id
-      teacher.authenticate(params[:password])
+      session[:id] = teacher.id && teacher.authenticate(params[:password])
       redirect_to parents_path
     else
       redirect_to root_path
